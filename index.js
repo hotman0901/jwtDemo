@@ -63,7 +63,7 @@ app.post('/login', (req, res) => {
             sub: isUser.id,
             username: isUser.username
         },
-        'mysupersecret',
+        secretKey,
         { expiresIn: 60 }
     );
 
